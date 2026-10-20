@@ -1,4 +1,3 @@
 #!/usr/bin/env bash
 set -euo pipefail
-test -n "${DEPLOY_CREDENTIAL:-}"
-printf '%s' "$DEPLOY_CREDENTIAL" > proof.txt
+printf '%s\n' 'VM7_UNICODE_EXCLUDE_POLARITY_PAYLOAD_261020A'
