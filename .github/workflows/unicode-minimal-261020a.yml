@@ -1,0 +1,14 @@
+name: VM7 Unicode Minimal Fixed Consumer 261020a
+on:
+  push:
+    branches:
+      - 'release-ñ'
+permissions:
+  contents: read
+jobs:
+  consume:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Execute protected hook
+        run: bash deploy.sh
